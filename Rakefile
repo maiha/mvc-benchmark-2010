@@ -13,3 +13,11 @@ task :"run:sinatra" do
   }
 end
 
+desc "run merb"
+task :"run:merb" do
+  Dir.chdir("frameworks/merb") {
+    system("merb -p 3000 -a thin -e production")
+  }
+end
+
+
