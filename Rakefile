@@ -27,3 +27,9 @@ task :"run:rails" do
   }
 end
 
+desc "run rack"
+task :"run:rack" do
+  Dir.chdir("frameworks/rack") {
+    system("thin start -e production ")
+  }
+end
