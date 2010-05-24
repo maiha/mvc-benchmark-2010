@@ -5,3 +5,11 @@ task :"run:play-scala" do
   }
 end
 
+desc "run sinatra"
+task :"run:sinatra" do
+  Dir.chdir("frameworks/sinatra") {
+    ENV['RACK_ENV'] = "production"
+    system("ruby server.rb -p 3000")
+  }
+end
+
