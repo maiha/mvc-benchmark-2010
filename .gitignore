@@ -1,0 +1,6 @@
+*.class
+db/
+precompiled/
+test-result/
+tmp/
+log/
