@@ -1,0 +1,62 @@
+What's this?
+============
+
+  Benchmark for MVC Frameworks in 2010
+
+
+Frameworks
+==========
+
+  * play-scala (play-1.1-r912, scala-0.6)
+  * sintara (1.0)
+
+
+Conditions
+==========
+
+  * in production mode
+  * disable logging
+  * just respond "pong" string by "ping" action
+
+
+Measure
+=======
+
+  first, hit 1000 times to run in caches
+
+    ab -n 1000 http://localhost:3000/ping
+
+  And then, measure req/s by 10000 requests.
+
+    ab -n 10000 http://localhost:3000/ping
+
+
+Scores
+======
+
+  sinatra: 1444.84
+  play-scala: 1151.97
+
+
+Environment
+===========
+
+  * OS : Ubuntu-9.10(x86_64)
+  * CPU: Intel(R) Core(TM)2 Quad CPU Q6600 (2.4GHz)
+  * MEM: 16GB
+
+  [NOTE]
+
+    This machine is providing some services and there should be some noises.
+    So I convince the scores are almost right, but not guarantee strictness.
+
+
+Homepage
+========
+
+  http://github.com/maiha/mvc-benchmark-2010
+
+
+Author
+======
+Maiha <maiha@wota.jp>
