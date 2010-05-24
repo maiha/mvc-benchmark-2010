@@ -8,8 +8,8 @@ Frameworks
 ==========
 
   * play-scala (play-1.1-r912, scala-0.6)
-  * sintara (1.0)
-
+  * sintara (sinatra-1.0, thin-1.2.7)
+  * merb (merb-1.1.0, thin-1.2.7)
 
 Conditions
 ==========
@@ -36,6 +36,7 @@ Scores
 
   sinatra: 1444.84
   play-scala: 1151.97
+  merb: 607.13 (not optimized)
 
 
 Environment
