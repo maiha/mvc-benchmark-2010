@@ -20,4 +20,10 @@ task :"run:merb" do
   }
 end
 
+desc "run rails"
+task :"run:rails" do
+  Dir.chdir("frameworks/rails") {
+    system("thin start -e production ")
+  }
+end
 
