@@ -27,8 +27,6 @@
 
 Merb.logger.info("Compiling routes...")
 Merb::Router.prepare do
-  default_routes
-  
-  # Change this for your home page to be available at /
   match('/ping').to(:controller => 'application', :action =>'ping')
+  default_routes
 end
